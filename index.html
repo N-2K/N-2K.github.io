@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>About Me</title>
+</head>
+<body>
+	<div id="content">
+	<header class="header">
+		<h1>Marshall Norman Hoskins</h1>
+	</header>
+	<nav id="main-nav">
+		<ul>
+			<li><a href="index.html">About Me</a></li>
+			<li><a href="quiz.html">Quiz</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div id="slideshow">
+		<img src="images/pic1.jpg" id="pic1" class="slideshowpic">
+		<img src="images/pic2.jpg" id="pic2" class="hidden">
+		<img src="images/pic3.jpg" id="pic3" class="hidden">
+		<img src="images/pic4.jpg" id="pic4" class="hidden">
+		<img src="images/pic5.jpg" id="pic5" class="hidden">
+		</div>
+		<div id="aboutp">
+			<h2 class="header">About Me</h2>
+			<p>Hello, my name is Marshall Norman Hoskins though most people just call by my middle name, Norman. I am a 4th year student at USC with one more semester left before I get my Batchelors in Bio with a minor in Computer Science. While I'm graduating here my first to years I spent at Midlands Tech getting an Associates in Science degree.</p>
+			<p id="aboutp2" class="hidden">On Tuesdays I go to the Board game club and on Wednesdays I go to the Video Game Club which I am currently president of. I would have ran again for president of CGC, but with only one semester left I would not be here long enough to complete a full term so I'll have to let soemone else take over from me.</p>
+			<p><a href=# id="aboutp2click" onclick="showMoreLess('aboutp2','aboutp2click')">Show More</a></p>
+		</div>
+		<div id="futurep">
+			<h2 class="header">Future Career Plans</h2>
+			<p>After graduating I hope to get either a Masters or PhD and go into research. I had picked up the CS minor in hopes to help with this as well. Over the Summer I'm planning on looking into and applying for these degrees. Of coure if that doesn't go well, I have a couple other things I can do with the biology degree.</p>
+			<p id="futurep2" class="hidden">First plan is to the apply again but for a teaching degree and then teach science classes. My other option is medical school, but with everything that's happened in the past couple of years and how poor the medical field treats its staff is why this is option three.</p>
+			<p><a href=# id="futurep2click" onclick="showMoreLess('futurep2','futurep2click')">Show More</a></p>
+		</div>
+		<div id="video">
+			<h2 class="header">What I Learned from Computer Science</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/BzuQ7vLAmoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; Marshall N. Hoskins</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

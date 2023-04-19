@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>Quiz</title>
+</head>
+<body>
+	<div id="content">
+	<header class="header">
+		<h1>Quiz</h1>
+	</header>
+	<nav id="main-nav">
+		<ul>
+			<li><a href="index.html">About Me</a></li>
+			<li><a href="quiz.html">Quiz</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main class="container">
+		<div class="column">
+			<h2>Web Development Quiz</h2>
+			<p><label for="q1">What is the difference between a Class and an ID?</label></p>
+			<select id="q1">
+				<option>IDs can be used by JS, classes cannot</option>
+				<option>IDs are for unique elements, classes can be resueded</option>
+				<option>Classes are only for CSS, IDs are only for JS</option>
+				<option>None of the above</option>
+			</select>
+			<p><label for="q2">if you wanted to access an html element by its ID, what should you use?</label></p>
+			<select id="q2">
+				<option>document.getElementByID</option>
+				<option>document.getContentByID</option>
+				<option>document.getElementById</option>
+				<option>document.getContentById</option>
+			</select>
+			<p><label for="q3">which of these is not self contained in HTML?</label></p>
+			<select id="q3">
+				<option>a</option>
+				<option>br</option>
+				<option>img</option>
+				<option>html</option>
+			</select>
+			<p><label for="q4">when using a link, what should you put after href to always stay on the same page?</label></p>
+			<select id="q4">
+				<option>index.html</option>
+				<option>#</option>
+				<option>leave it blank</option>
+				<option>currentHTML</option>
+			</select>
+			<br>
+			<br>
+			<button onclick="showResults()">Grade</button>
+		</div>
+		<div class="column">
+			<h2>Results</h2>
+			<p id="r1"></p>
+			<p id="r2"></p>
+			<p id="r3"></p>
+			<p id="r4"></p>
+			<p id="rT"></p>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; Marshall N. Hoskins</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

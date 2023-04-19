@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>test 7</title>
+</head>
+<body>
+	<div id="content">
+	<header class="header">
+		<h1>Header 1</h1>
+	</header>
+	<nav id="main-nav">
+		<ul>
+			<li><a href="index.html">About Me</a></li>
+			<li><a href="quiz.html">Quiz</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main class="container">
+		<div class="contact">
+			
+			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3309.117394718309!2d-81.0792229!3d33.963822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bc80f6503c7f%3A0x96c4b95a6f4b5f72!2sB%20C%20Engineering%20%26%20Design%20LLC!5e0!3m2!1sen!2sus!4v1678804649210!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+			<div id="address">
+				<h2>Address</h2>
+				<p><strong>B C Engineering &#38; Design LLC</strong></p>
+				<p>1801 Charleston Hwy</p>
+				<p>Cayce, SC 29033</p>
+			</div>
+			
+			<div id="contactForm">
+				<div>
+					<h2>Contact Me</h2>
+				<div>
+				<form id="form" action="https://api.web3forms.com/submit" method="POST">
+					    <input type="hidden" name="access_key" value="4f91900e-c4a8-4043-bf8b-bbac97a93924">
+					    <p>name</p>	
+					    <input type="text" name="name" required>
+					    <p>email</p>
+					    <input type="email" name="email" required>
+					    <p>message</p>
+					    <textarea id="messagebox" name="message" required></textarea>
+					    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+					    <br>
+					    <button type="submit">Submit Form</button>
+				</form>
+			</div>
+		</div>
+		
+	</main>
+	<footer>
+		<p>&copy; Marshall N. Hoskins</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/*main body*/
+body{
+	font-family:arial;
+	margin:0;
+}
+header,nav,main,footer{
+	padding:5px;
+	border-radius:5px;
+}
+header,nav,footer{
+	background:#982BAD;
+}
+main{
+	background: #E057FA;
+}
+
+/*body classes/ids*/
+.hidden{
+	display:none;
+}
+
+.major{
+	flex:2;
+}
+
+/*navigation*/
+
+#main-nav ul{
+	list-style-type:none;
+	text-align:center;
+	padding-left:0;
+}
+.header{
+	text-align:center;
+}
+
+#main-nav a{
+	text-decoration:none;
+	background:#EE99FF;
+	color:darkslategray;
+	border-radius:2px;
+	width:100%; 
+	display:block; /* good for phones*/
+}
+#main-nav a:hover{
+	background:#6DAD1A;
+	color:#fff;
+}
+/*images*/
+
+#slideshow{
+	display:flex;
+	justify-content:center;
+}
+.slideshowpic{
+	display:inline;
+}
+
+
+/*Larger Resolutions*/
+@media(min-width:720px) {
+	#content {
+		margin:auto;
+		width:90%;
+	}
+	body{
+		background:#D1FA9D;
+	}
+	#main-nav li {
+		display:inline;
+	}
+	#main-nav a {
+		display:inline;
+		padding:3px;
+	}
+	.container{
+		display:flex;
+	}
+	.column{
+		flex:1;
+	}
+	/*Contact page*/
+	.contact{
+		display:flex;
+	}
+	#contactForm{
+	display:flex;
+	justify-content: left;
+	flex:1;
+	}
+	.map{
+		flex:10;
+	}
+	.flexC{
+		display:flex;
+		justify-content:center;
+	}
+	#address{
+		margin:5px;
+		padding:50px 0;
+		text-align:center;
+		flex:1;
+	}
+}
+/*what will or won't get printed and how*/
+@media print{
+	#main-nav,header {
+		display:none;
+	}
+}
